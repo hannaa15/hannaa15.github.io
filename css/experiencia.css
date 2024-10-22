@@ -1,0 +1,147 @@
+
+
+
+
+
+.subtitulo{
+    align-self: start;
+    color: black;
+}
+
+
+.texto_experiencia{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: blueviolet;
+}
+strong{
+    color: black;
+}
+
+.projetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+    
+}
+
+.experiencia_span{
+    font-weight: bold;
+}
+
+.projetos_empresa{
+    font-size: calc(20rem/16);
+    
+}
+
+.projetos_duracao{
+    position: absolute;
+    top: 22px;
+    left: -100px;
+    color: #525252;
+    text-align: right;
+    width: 80px;
+    font-size: 0.875rem;
+}
+
+.projetos_habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: center;
+}
+
+.projetos_habilidades li{
+    background-color: gray;
+    padding: 10px 20px;
+
+}
+
+.projetos::before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#f829d6,blueviolet);
+    position: absolute;
+    top: 18px;
+    left: 0px;
+}
+
+.projetos_titulo{
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.projetos_ano{
+    position: absolute;
+    top: 22px;
+    left: -100px;
+    color: #525252;
+    text-align: right;
+    width: 80px;
+    font-size: 0.875rem;
+}
+
+.projetos_texto{
+font-size: 0.875rem;
+line-height: 1.4;
+color: #525252;
+
+}
+
+.projetos_habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: center;
+}
+
+.projetos_habilidades li{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius:4px ;
+    background: #ffffff;
+    padding: 5px 10px;
+
+}
+
+@media (max-width: 800px) {
+    .experiencia {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .experiencia .subtitulo {
+      color: #141414;
+    }
+    .texto_experiencia {
+      font-size: 1.25rem;
+    }
+    .projetos_ano {
+      position: initial;
+      order: 1;
+      width: initial;
+      text-align: left;
+    }
+    .projetos_ano::before {
+      content: "Ano: ";
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .projetos {
+      grid-template-columns: 1fr;
+    }
+  }
+
+ 
+
+ 
